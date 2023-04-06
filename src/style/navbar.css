@@ -31,6 +31,6 @@ input[type="search"]::placeholder {
 }
 @media screen and (max-width: 440px) {
   input[type="search"]::placeholder {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
