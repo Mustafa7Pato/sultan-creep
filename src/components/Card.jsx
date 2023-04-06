@@ -39,7 +39,9 @@ const Card = ({ item }) => {
                 onClick={() => handleFavoriteClick(item.id)}
               />
               <span className="ml-1">
-                {favorites[item.id] ? favorites[item.id] : 0}
+                {favorites[item.id]
+                  ? favorites[item.id]
+                  : (Math.random() * 999 + 1).toFixed(0)}
               </span>
             </div>
             <p>
