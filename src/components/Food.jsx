@@ -77,7 +77,7 @@ const Food = ({ itemsData, filterbyCategory, allCategory, filterbyPrice }) => {
       </div>
 
       {/* Display foods */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-4">
+      <div className="grid md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 gap-6 pt-4">
         {itemsData.length >= 1 ? (
           itemsData.map((item) => {
             return <Card key={item.id} item={item} />;

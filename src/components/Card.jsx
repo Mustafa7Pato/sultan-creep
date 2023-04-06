@@ -3,15 +3,19 @@ import { FaHeart, FaStar } from "react-icons/fa";
 import { Zoom } from "react-reveal";
 
 const Card = ({ item }) => {
-  const [count, setCount] = useState(
-    parseInt(localStorage.getItem("count")) || 0
+  const [favorites, setFavorites] = useState(
+    JSON.parse(localStorage.getItem("favorites")) || {}
   );
 
   useEffect(() => {
-    localStorage.setItem("count", count);
-  }, [count]);
-  const handleHeartClick = () => {
-    setCount(count + 1);
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+  }, [favorites]);
+
+  const handleFavoriteClick = (id) => {
+    setFavorites((prevFavorites) => ({
+      ...prevFavorites,
+      [id]: (prevFavorites[id] || 0) + 1,
+    }));
   };
   return (
     <Zoom>
@@ -32,9 +36,11 @@ const Card = ({ item }) => {
               <FaHeart
                 size={20}
                 className="text-red-500 cursor-pointer active:text-red-900"
-                onClick={handleHeartClick}
+                onClick={() => handleFavoriteClick(item.id)}
               />
-              <span className="ml-1">{count}</span>
+              <span className="ml-1">
+                {favorites[item.id] ? favorites[item.id] : 0}
+              </span>
             </div>
             <p>
               <span className="bg-orange-500 text-white p-1 relative bottom-0  rounded-full">
