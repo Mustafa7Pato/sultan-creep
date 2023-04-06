@@ -1,0 +1,20 @@
+.head-cards {
+  background: url(../images/wafel.jpg);
+  background-attachment: fixed;
+}
+.btn-order {
+  background-image: linear-gradient(to bottom right, #ff9900, #e67300);
+  color: white;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: none;
+  box-shadow: 1px 1px 5px inset black;
+}
+
+.btn-order:hover {
+  background-image: linear-gradient(to bottom right, #e67300, #ff9900);
+  cursor: pointer;
+}

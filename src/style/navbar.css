@@ -1,0 +1,36 @@
+form {
+  box-shadow: inset 2px 1px 8px black;
+  background: #ffffffc0;
+}
+form input {
+  caret-color: goldenrod;
+}
+.menu-bar {
+  height: 100%;
+}
+.menu-bar ul {
+  height: 100%;
+}
+input[type="search"]::placeholder {
+  letter-spacing: 2px;
+  color: goldenrod;
+}
+.novbar {
+  background: linear-gradient(to bottom, #333333, #000000);
+  box-shadow: inset 0px -3px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+.novbar a {
+  color: #fff;
+}
+@media screen and (max-width: 640px) {
+  input[type="search"]::placeholder {
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 440px) {
+  input[type="search"]::placeholder {
+    font-size: 10px;
+  }
+}
