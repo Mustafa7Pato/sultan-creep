@@ -9,13 +9,13 @@ const Navbar = ({ filterbySearch }) => {
   const [nav, setNav] = useState(false);
   const [socialItems, setSocialitem] = useState(navItems);
   return (
-    <div className="max-w-[1640px] mx-auto w-full flex justify-between items-center p-4 max-h-20 fixed z-10">
+    <div className="max-w-[1640px] mx-auto w-full flex justify-between items-center p-4 max-h-20 fixed z-10 navigation">
       {/* Left side */}
       <div className="flex items-center">
         <div onClick={() => setNav(!nav)} className="cursor-pointer">
           <AiOutlineMenu size={30} className="text-yellow-300" />
         </div>
-        <a href="#">
+        <a href="#/">
           <img src="logo.png" alt="logo" className="rounded-full" />
         </a>
       </div>

@@ -5,15 +5,15 @@ import "../style/gallery.css";
 const Gallery = () => {
   const [imgs, setImgs] = useState(data);
   const settings = {
-    // dots: false,
+    dots: false,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     speed: 3000,
-    autoplaySpeed: 0,
+    autoplaySpeed: 200,
     cssEase: "linear",
-    // arrows: false,
+    arrows: false,
     centerMode: true,
     responsive: [
       {
@@ -21,6 +21,7 @@ const Gallery = () => {
         settings: {
           slidesToShow: 2,
           centerPadding: "50px",
+          centerMode: true,
         },
       },
       {
@@ -28,6 +29,7 @@ const Gallery = () => {
         settings: {
           slidesToShow: 1,
           centerPadding: "30px",
+          centerMode: true,
         },
       },
     ],
@@ -44,7 +46,7 @@ const Gallery = () => {
             imgs.map((img, index) => {
               return (
                 <div>
-                  <div className="h-80 w-60 my-4">
+                  <div className="h-80 w-80 sm:p-3 my-4">
                     <img
                       src={img.image}
                       alt=""
