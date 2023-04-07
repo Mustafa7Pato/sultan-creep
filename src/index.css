@@ -24,7 +24,6 @@ body {
 }
 .error {
   position: relative;
-  width: 100%;
 }
 .error h1 {
   position: absolute;
