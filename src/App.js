@@ -4,6 +4,7 @@ import HeadlineCards from "./components/HeadlineCards";
 import Food from "./components/Food";
 import Carsoul from "./components/Carsoul";
 import { data } from "./data/data";
+import Gallery from "./components/Gallery";
 
 function App() {
   const [itemsData, setItemsData] = useState(data);
@@ -43,8 +44,8 @@ function App() {
         filterbyCategory={filterbyCategory}
         allCategory={allCategory}
         filterbyPrice={filterbyPrice}
-      />{" "}
-      \
+      />
+      <Gallery />
     </div>
   );
 }

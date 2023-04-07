@@ -7,6 +7,11 @@
     @apply border border-black rounded-xl px-5 py-1;
   }
 }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -14,8 +19,8 @@ html {
 body {
   overflow-x: hidden;
   font-family: "Cairo", sans-serif;
-  user-select: text;
-  background: linear-gradient(to bottom, #fff, #eee, #fff);
+  user-select: none;
+  background-color: #fee2b3;
 }
 .error {
   position: relative;
