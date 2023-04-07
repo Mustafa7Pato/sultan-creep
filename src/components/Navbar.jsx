@@ -15,7 +15,7 @@ const Navbar = ({ filterbySearch }) => {
         <div onClick={() => setNav(!nav)} className="cursor-pointer">
           <AiOutlineMenu size={30} className="text-yellow-300" />
         </div>
-        <a href="#/">
+        <a href="#">
           <img src="logo.png" alt="logo" className="rounded-full" />
         </a>
       </div>

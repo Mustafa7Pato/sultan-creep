@@ -11,7 +11,7 @@ const Gallery = () => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 3000,
-    autoplaySpeed: 200,
+    autoplaySpeed: 0,
     cssEase: "linear",
     arrows: false,
     centerMode: true,
