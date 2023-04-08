@@ -11,7 +11,7 @@ const Footer = () => {
             <img src="logo.png" alt="" className="" />
           </div>
           <div className="w-2/3 mb-4 flex md:mb-0 justify-center text-gray-200">
-            <div className=" flex w-3/4 flex-wrap justify-between items-center footer-social">
+            <div className=" flex w-full flex-wrap justify-between items-center footer-social">
               <Bounce bottom>
                 {social.map((socialIcon, index) => (
                   <a
