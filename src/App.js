@@ -5,7 +5,8 @@ import Food from "./components/Food";
 import Carsoul from "./components/Carsoul";
 import { data } from "./data/data";
 import Gallery from "./components/Gallery";
-
+import Location from "./components/Location";
+import Footer from "./components/Footer";
 function App() {
   const [itemsData, setItemsData] = useState(data);
   const allCategory = ["الكل", ...new Set(data.map((i) => i.category))];
@@ -46,6 +47,8 @@ function App() {
         filterbyPrice={filterbyPrice}
       />
       <Gallery />
+      <Location />
+      <Footer />
     </div>
   );
 }
