@@ -12,18 +12,16 @@ const Footer = () => {
           </div>
           <div className="w-2/3 mb-4 flex md:mb-0 justify-center text-gray-200">
             <div className=" flex w-3/4 flex-wrap justify-between items-center footer-social">
-              <Bounce>
-                {social.map((socialIcon, index) => (
-                  <a
-                    key={index}
-                    href={socialIcon.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {socialIcon.icon}
-                  </a>
-                ))}
-              </Bounce>
+              {social.map((socialIcon, index) => (
+                <a
+                  key={index}
+                  href={socialIcon.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {socialIcon.icon}
+                </a>
+              ))}
               <h1>:للتواصل</h1>
             </div>
           </div>
