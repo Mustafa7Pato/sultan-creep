@@ -16,6 +16,11 @@
   z-index: -10;
   background: linear-gradient(to bottom, #000, #05050496, #000);
 }
+.img-gallery {
+  box-shadow: 1px 1px 20px #000;
+  border-radius: 2em;
+  backdrop-filter: blur(10px);
+}
 @media screen and (max-width: 440px) {
   .img-gallery {
     padding: 2.2rem;
