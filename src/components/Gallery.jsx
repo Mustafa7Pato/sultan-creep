@@ -9,11 +9,12 @@ const Gallery = () => {
     className: "center",
     centerMode: true,
     infinite: true,
+    arrows: false,
     centerPadding: "60px",
     slidesToShow: 3,
     autoplay: true,
     autoplaySpeed: 3000,
-    speed: 500,
+    speed: 1000,
     responsive: [
       {
         breakpoint: 1024,
@@ -45,11 +46,11 @@ const Gallery = () => {
                 <div key={index}>
                   {" "}
                   {/* Key added to parent div */}
-                  <div className="h-80 w-80 sm:p-3 my-4">
+                  <div className="h-80 w-96 sm:p-3 my-4">
                     <img
                       src={img.image}
                       alt=""
-                      className="w-full h-full shadow-xl rounded-2xl transition-all duration-300 transform-gpu hover:scale-105 shadow-md hover:shadow-lg cursor-pointer"
+                      className="w-full  h-full shadow-xl rounded-2xl transition-all duration-300 transform-gpu hover:scale-105 shadow-md hover:shadow-lg cursor-pointer"
                     />
                   </div>
                 </div>
