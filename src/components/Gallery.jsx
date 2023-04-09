@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import { data } from "../data/data";
 import "../style/gallery.css";
+
 const Gallery = () => {
   const [imgs, setImgs] = useState(data);
   const settings = {
@@ -11,7 +12,7 @@ const Gallery = () => {
     slidesToScroll: 1,
     autoplay: true,
     speed: 3000,
-    autoplaySpeed: 0,
+    autoplaySpeed: 2000,
     cssEase: "linear",
     arrows: false,
     centerMode: true,
@@ -45,7 +46,9 @@ const Gallery = () => {
           {imgs.length >= 1 ? (
             imgs.map((img, index) => {
               return (
-                <div>
+                <div key={index}>
+                  {" "}
+                  {/* Key added to parent div */}
                   <div className="h-80 w-80 sm:p-3 my-4">
                     <img
                       src={img.image}
