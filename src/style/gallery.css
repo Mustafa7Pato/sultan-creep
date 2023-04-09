@@ -17,7 +17,7 @@
   background: linear-gradient(to bottom, #000, #05050496, #000);
 }
 @media screen and (max-width: 440px) {
-  img {
+  .img-gallery {
     padding: 2.2rem;
   }
 }

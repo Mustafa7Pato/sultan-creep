@@ -50,7 +50,7 @@ const Gallery = () => {
                     <img
                       src={img.image}
                       alt=""
-                      className="w-full  h-full shadow-xl rounded-2xl transition-all duration-300 transform-gpu hover:scale-105 shadow-md hover:shadow-lg cursor-pointer"
+                      className="w-full img-gallery  h-full shadow-xl rounded-2xl transition-all duration-300 transform-gpu hover:scale-105 shadow-md hover:shadow-lg cursor-pointer"
                     />
                   </div>
                 </div>
