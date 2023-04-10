@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 const Search = ({ filterbySearch }) => {
   const [searchValue, setSearchValue] = useState("");
+  const searchRef = useRef(null);
+  useEffect(() => {
+    searchRef.current.focus();
+  }, []);
   const onSearch = () => {
     filterbySearch(searchValue);
     setSearchValue("");
+    window.location.href = "/#menu";
   };
 
   const handleSubmit = (e) => {
@@ -24,6 +29,7 @@ const Search = ({ filterbySearch }) => {
         placeholder="...ابحث اﻻن"
         onChange={(e) => setSearchValue(e.target.value)}
         value={searchValue}
+        ref={searchRef}
       />
     </form>
   );

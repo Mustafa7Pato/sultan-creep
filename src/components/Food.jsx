@@ -11,7 +11,7 @@ const Food = ({ itemsData, filterbyCategory, allCategory, filterbyPrice }) => {
     filterbyPrice(cat);
   };
   return (
-    <div className="max-w-[1640px] m-auto px-4 py-12 menu">
+    <div className="max-w-[1640px] m-auto px-4 py-12 menu" id="menu">
       <h1 className="text-orange-600 font-bold text-4xl text-center">
         Sultan Menu
       </h1>
