@@ -19,7 +19,7 @@ const Card = ({ item }) => {
   };
   return (
     <Zoom>
-      <div className="border shadow-lg rounded-lg">
+      <div className="border shadow-lg rounded-lg overflow-hidden">
         <img
           src={item.image}
           alt={item.title}

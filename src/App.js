@@ -37,7 +37,7 @@ function App() {
 
   return (
     <div>
-      <Navbar filterbySearch={filterbySearch} />
+      <Navbar />
       <Carsoul />
       <HeadlineCards />
       <Food
@@ -45,6 +45,7 @@ function App() {
         filterbyCategory={filterbyCategory}
         allCategory={allCategory}
         filterbyPrice={filterbyPrice}
+        filterbySearch={filterbySearch}
       />
       <Gallery />
       <Location />

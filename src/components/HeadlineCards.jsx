@@ -13,9 +13,12 @@ const HeadlineCards = () => {
             <div className="absolute w-full h-full bg-black/50 rounded-xl text-white">
               <p className="font-bold text-2xl px-2 pt-4">{card.title}</p>
               <p className="px-2 font-bold text-orange-400">{card.subtitle}</p>
-              <button className="btn-order mx-2 absolute bottom-4">
+              <a
+                href="tel:+201111680029"
+                className="btn-order mx-2 absolute bottom-4"
+              >
                 اطلب اﻵن
-              </button>
+              </a>
             </div>
             <img
               className="max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl"

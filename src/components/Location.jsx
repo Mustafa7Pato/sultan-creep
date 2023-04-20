@@ -3,7 +3,7 @@ import { GoLocation } from "react-icons/go";
 import { AiOutlineMail, AiOutlineMobile } from "react-icons/ai";
 const Location = () => {
   return (
-    <div className="container-fluid flex-wrap flex mb-4">
+    <div className="container-fluid flex-wrap flex mb-4 max-w-[1640px] mx-auto">
       <h1 className="text-orange-600 font-bold text-4xl text-center w-full my-10 ">
         Our Location
       </h1>
@@ -33,7 +33,14 @@ const Location = () => {
                   </span>
                 </h1>
               </li>
-              <li className="text-gray-600">Soultan@Creep.Com</li>
+              <li className="text-gray-600">
+                <a
+                  href="https://mail.google.com/mail/?view=cm&to=soultan@creep.com"
+                  target="_blank"
+                >
+                  soultan@creep.com
+                </a>
+              </li>
             </ul>
             <ul className="my-4">
               <li className=" flex justify-center mb-2 ">

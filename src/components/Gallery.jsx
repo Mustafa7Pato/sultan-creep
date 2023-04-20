@@ -34,7 +34,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="gallery mx-auto">
+    <div className="gallery max-w-[1640px] mx-auto">
       <div className=" text-center">
         <h1>
           معرض <span>اعمالنا</span>{" "}

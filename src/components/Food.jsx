@@ -3,7 +3,14 @@ import { Fade } from "react-reveal";
 import Card from "./Card.jsx";
 import "../style/food.css";
 import DataNotFound from "./DataNotFound.jsx";
-const Food = ({ itemsData, filterbyCategory, allCategory, filterbyPrice }) => {
+import Search from "./Search.jsx";
+const Food = ({
+  itemsData,
+  filterbyCategory,
+  allCategory,
+  filterbyPrice,
+  filterbySearch,
+}) => {
   const onFilter = (cat) => {
     filterbyCategory(cat);
   };
@@ -15,6 +22,10 @@ const Food = ({ itemsData, filterbyCategory, allCategory, filterbyPrice }) => {
       <h1 className="text-orange-600 font-bold text-4xl text-center">
         Sultan Menu
       </h1>
+      <div className="search flex justify-center items-center my-2  w-full">
+        {" "}
+        <Search filterbySearch={filterbySearch} />
+      </div>
       {/* Filter Row */}
       <div className="flex flex-col lg:flex-row justify-between">
         {/* Fliter Type */}

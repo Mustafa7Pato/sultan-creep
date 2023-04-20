@@ -7,7 +7,7 @@ import { Bounce } from "react-reveal";
 const Carsoul = () => {
   const [social, setSocial] = useState(socialIcons);
   return (
-    <div className="relative carsoul">
+    <div className="relative carsoul max-w-[1640px] mx-auto">
       <div className="flex justify-center items-center h-full">
         <h1>
           The <span>Best</span>
