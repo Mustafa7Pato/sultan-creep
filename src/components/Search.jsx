@@ -24,7 +24,7 @@ const Search = ({ filterbySearch }) => {
         <AiOutlineSearch size={25} />
       </button>
       <input
-        className="bg-transparent p-2 w-full focus:outline-none text-center text-xl"
+        className="bg-transparent p-2 w-full focus:outline-none text-end text-xl"
         type="search"
         placeholder="...ابحث اﻻن"
         onChange={(e) => setSearchValue(e.target.value)}

@@ -123,3 +123,11 @@ footer::after {
     line-height: 2.5;
   }
 }
+@media screen and (max-width: 440px) {
+  input[type="search"]::placeholder {
+    font-size: 10px;
+  }
+  form {
+    width: 250px !important;
+  }
+}
