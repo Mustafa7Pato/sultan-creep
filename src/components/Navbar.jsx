@@ -4,7 +4,6 @@ import { navItems } from "./SocialItems";
 import { MdFavorite } from "react-icons/md";
 import "../style/navbar.css";
 import { Bounce } from "react-reveal";
-import Search from "./Search";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [socialItems, setSocialitem] = useState(navItems);
@@ -19,6 +18,9 @@ const Navbar = () => {
           <img src="logo.png" alt="logo" className="rounded-full" />
         </a>
       </div>
+      <a href="#menu">
+        <h1 className="menu">Menu</h1>
+      </a>
       {/* Cart button */}
       <button className="bg-red-500 border-none text-white hidden md:flex items-center py-2 rounded-full">
         <MdFavorite size={20} className="mr-2" /> Favorite

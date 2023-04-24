@@ -9,7 +9,6 @@ const Search = ({ filterbySearch }) => {
   const onSearch = () => {
     filterbySearch(searchValue);
     setSearchValue("");
-    window.location.href = "/#menu";
   };
 
   const handleSubmit = (e) => {
