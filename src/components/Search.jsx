@@ -2,10 +2,6 @@ import React, { useEffect, useRef, useState } from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 const Search = ({ filterbySearch }) => {
   const [searchValue, setSearchValue] = useState("");
-  const searchRef = useRef(null);
-  useEffect(() => {
-    searchRef.current.focus();
-  }, []);
   const onSearch = () => {
     filterbySearch(searchValue);
     setSearchValue("");
@@ -24,11 +20,10 @@ const Search = ({ filterbySearch }) => {
       </button>
       <input
         className="bg-transparent p-2 w-full focus:outline-none text-end text-xl"
-        type="search"
+        type="text"
         placeholder="...ابحث اﻻن"
         onChange={(e) => setSearchValue(e.target.value)}
         value={searchValue}
-        ref={searchRef}
       />
     </form>
   );
